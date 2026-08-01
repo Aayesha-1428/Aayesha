@@ -1,0 +1,12 @@
+let decimal: number = 25;
+let binary: string = "";
+let num = decimal;
+if (num === 0) {
+    binary = "0";
+} else {
+    while (num > 0) {
+        binary = (num % 2) + binary;
+        num = Math.floor(num / 2);
+    }
+}
+console.log("Binary of", decimal, "is", binary);
